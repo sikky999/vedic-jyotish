@@ -1,5 +1,5 @@
-const swisseph = require("swisseph");
-var pathToSwisseph = require.resolve("swisseph/package.json").split("/");
+const swisseph = require("swisseph-v2");
+var pathToSwisseph = require.resolve("swisseph-v2/package.json").split("/");
 pathToSwisseph.pop();
 swisseph.swe_set_ephe_path(pathToSwisseph.join("/") + "/ephe");
 

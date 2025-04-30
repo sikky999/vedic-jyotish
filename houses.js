@@ -1,4 +1,4 @@
-const swisseph = require("swisseph");
+const swisseph = require("swisseph-v2");
 const { getValidatedBirthDetails } = require("jyotish").utils.birthDetails;
 /**
  * 
