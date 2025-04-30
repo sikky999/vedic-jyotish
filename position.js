@@ -1,9 +1,9 @@
 const swisseph = require("swisseph-v2");
 const { ...constants } = require("./constants");
 const ephemeris = require("ephemeris");
-const jyotish = require("jyotish");
+const jyotish = require("jyotish-calculations");
 const { calculateHouses } = require("./houses");
-const grahas = require("jyotish/src/grahas");
+const grahas = require("jyotish-calculations/src/grahas");
 const nakshatras = require("./nakshatra");
 const rashis = require("./rashi");
 
