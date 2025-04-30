@@ -1,6 +1,6 @@
 {
   "name": "vedic-astrology",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Astrology Library to get Birth Chart and Navamsa Chart. Compatibility retrieval using the same.",
   "main": "index.js",
   "scripts": {
