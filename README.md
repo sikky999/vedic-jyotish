@@ -1,9 +1,10 @@
-# Reha Astrology
+
+# Vedic Astrology
 
 `Doesn't work in browser environments. Please run on server`
 
 ```shell
-npm i -S astroreha
+npm i -S vedic-astrology
 ```
 
 1. Default House System: `Whole Sign`
@@ -13,7 +14,7 @@ npm i -S astroreha
 ### Get Birth Chart
 
 ```javascript
-const astroreha = require("astroreha");
+const vedicAstrology = require("vedic-astrology");
 
 // Get Birth Chart Details
 /**
@@ -23,7 +24,7 @@ const astroreha = require("astroreha");
  * @param {Number} lng longitude
  * @param {Number} timezone timezone in hours
  */
-const birthChart = astroreha.positioner.getBirthChart("1999-05-22", "08:00:00", 28.6139, 77.209, 5.5);
+const birthChart = vedicAstrology.positioner.getBirthChart("1999-05-22", "08:00:00", 28.6139, 77.209, 5.5);
 // Get Rashi
 birthChart.meta.Mo.rashi // Rashi is Moon Sign in Indian Astrology
 // Get Sun Sign
@@ -32,7 +33,7 @@ birthChart.meta.Su.rashi
 birthChart.aries.signs // returns an array of grahas
 
 // Get compatibility (returns Boolean)
-astroreha.compatibility.areCompatible({dateString, timeString, lat, lng, timezone}, {dateString, timeString, lat, lng, timezone});
+vedicAstrology.compatibility.areCompatible({dateString, timeString, lat, lng, timezone}, {dateString, timeString, lat, lng, timezone});
 ```
 ## Updates for 1.1.5
 1. Changed Getting Navamsa Chart Logic to be more accurate considering floating point inaccuracies
@@ -45,4 +46,4 @@ astroreha.compatibility.areCompatible({dateString, timeString, lat, lng, timezon
 
 
 
-### Verified with [Prokerela.com](https://www.prokerala.com)
+### Verified with [Prokerala.com](https://www.prokerala.com)
